@@ -1,9 +1,25 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+
+import Image from "next/image";
+import * as Jux from "../lib/jux/components";
+import styles from "./page.module.css";
+
+const scroll = (to: number) =>
+  window.scrollTo({
+    left: 0,
+    top: to,
+    behavior: "smooth",
+  });
+const scrollDown = () => scroll(window.innerHeight);
+const scrollUp = () => scroll(0);
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <div className={styles.main}>
+        <Jux.Button_1 text="Click me ⬇" onClick={scrollDown} />
+      </div>
+
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
@@ -15,7 +31,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -90,6 +106,12 @@ export default function Home() {
           </p>
         </a>
       </div>
+
+      <Jux.Button_2
+        text="Click me ⬆"
+        onClick={scrollUp}
+        style={{ marginTop: "4rem" }}
+      />
     </main>
-  )
+  );
 }
