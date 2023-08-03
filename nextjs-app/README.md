@@ -1,3 +1,55 @@
+# JUX + Next.js
+
+Using JUX with Next.js
+
+This example demonstrates how JUX can be used in a typical Next.js project.
+
+⚠️ **Note: for demo purposes - running the commands below would likely break the examples provided herein.**
+
+## Setup JUX dependencies
+
+The `@jux/cli` and `@jux/dui` libraries are already included in the package.json.
+
+They can be updated by running:
+
+```bash
+npm i @jux/cli @jux/dui
+```
+
+## Generated Code
+
+The generated code is located under the `src/lib/jux` folder:
+
+- `components.ts` - contains the generated styled components.
+- `theme.ts` - contains the generated theme object.
+- `fonts.ts` - contains the supported fonts, etc.
+
+<details>
+The commands used for this setup:
+
+1. Login to the JUX server
+   ```bash
+   npm run jux:login
+   ```
+2. Pull data from JUX server and update the generated code modules.
+`bash
+    npm run jux:pull 
+    `
+</details>
+
+## Usage examples
+
+1. The generated theme is used in [src/app/layout.tsx](./src/app/layout.tsx):
+   ```typescript jsx
+   <ThemeProvider />
+   ```
+2. The generated components are used in [src/app/page.tsx](./src/app/page.tsx):
+   ```typescript jsx
+   <Jux.Button_1 />
+   ```
+
+# Next.js app
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
