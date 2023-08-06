@@ -4,7 +4,7 @@ Using JUX with Next.js
 
 This example demonstrates how JUX can be used in a typical Next.js project.
 
-⚠️ **Note: for demo purposes - running the commands below would likely break the examples provided herein.**
+⚠️ **Note: for demo purposes - running the commands below would likely break the examples provided herein - so be prepared to modify some example code.**
 
 ## Setup JUX dependencies
 
@@ -32,9 +32,9 @@ The commands used for this setup:
    npm run jux:login
    ```
 2. Pull data from JUX server and update the generated code modules.
-`bash
-    npm run jux:pull 
-    `
+   ```bash
+   npm run jux:pull
+   ```
 </details>
 
 ## Usage examples
