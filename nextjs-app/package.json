@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "jux:login": "jux login",
     "jux:pull": "jux pull -d src/lib/jux"
   },
   "dependencies": {
