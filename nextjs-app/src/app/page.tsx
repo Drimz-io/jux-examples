@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.main}>
-        <Jux.Button_1 text="Click me ⬇" onClick={scrollDown} />
+        <Jux.Button_1 onClick={scrollDown}>Click me ⬇</Jux.Button_1>
       </div>
 
       <div className={styles.description}>
@@ -107,11 +107,9 @@ export default function Home() {
         </a>
       </div>
 
-      <Jux.Button_2
-        text="Click me ⬆"
-        onClick={scrollUp}
-        style={{ marginTop: "4rem" }}
-      />
+      <Jux.Button_2 onClick={scrollUp} style={{ marginTop: "4rem" }}>
+        Click me ⬆
+      </Jux.Button_2>
     </main>
   );
 }

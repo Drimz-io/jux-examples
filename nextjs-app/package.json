@@ -11,8 +11,8 @@
     "jux:pull": "jux pull -d src/lib/jux"
   },
   "dependencies": {
-    "@jux/cli": "^0.1.5",
-    "@jux/dui": "^0.1.0",
+    "@jux/cli": "^0.3.1",
+    "@jux/dui": "^0.1.1",
     "@types/node": "20.4.5",
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
